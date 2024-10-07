@@ -1,13 +1,13 @@
 const fs = require('fs')
 const chalk = require('chalk')
 
-global.ownernomer = "2347057874839"
+global.ownernomer = "2347041039367"
 global.ownername = "𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽"
 global.ytname = "𝙱𝙻𝚄𝙴 Tech"
 global.socialm = ""
 global.location = "Nigeria"
 
-global.ownernumber = '2347057874839'  
+global.ownernumber = '2347041039367'  
 global.ownername = '𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽' 
 global.botname = '𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽' 
 
